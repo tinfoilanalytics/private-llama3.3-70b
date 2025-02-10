@@ -14,4 +14,3 @@ shim:
   paths:
     - /api/chat
     - /v1/chat/completions
-
