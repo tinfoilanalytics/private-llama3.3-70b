@@ -1,0 +1,17 @@
+cvm-version: 0.0.12
+ovmf-version: 0.0.2
+cpus: 16
+memory: 8192
+
+models:
+  - id: llama3.3:70b
+    mpk: 7272277b9c507fc5d328cad4e14e8058e873eb5738857d9719dcdbf0873c3001-42520420352
+
+shim:
+  domain: example.com
+  listen-port: 443
+  upstream-port: 11434
+  paths:
+    - /api/chat
+    - /v1/chat/completions
+
